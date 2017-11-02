@@ -17,7 +17,7 @@ class String
   def count_sentences
     counter = 0
     self.split(" ").each do |word|
-      if sentence? || question? || exclamation?
+      if word.sentence? || word.question? || word.exclamation?
         counter += 1
       end
     end
